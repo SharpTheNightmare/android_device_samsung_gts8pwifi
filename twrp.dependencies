@@ -1,2 +1,8 @@
 [
+  {
+    "repository": "android_hardware_qcom_cryptfs_hw",
+    "remote": "qcom",
+    "branch": "android-12",
+    "target_path": "hardware/qcom/cryptfs_hw"
+  }
 ]

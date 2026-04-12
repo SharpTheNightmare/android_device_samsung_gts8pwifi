@@ -36,7 +36,6 @@ gh_ctrl.ko
 gh_dbl.ko
 gh_msgq.ko
 gh_rm_drv.ko
-gh_virt_wdt.ko
 hwkm.ko
 icc-bcm-voter.ko
 icc-debug.ko
@@ -81,15 +80,11 @@ pinctrl-spmi-gpio.ko
 qcom-reboot-reason.ko
 qcom_rpmh.ko
 qcom-scm.ko
-qcom_wdt_core.ko
-qcom_tsens.ko
 qti-adc-tm.ko
 qcom-spmi-adc5.ko
 qcom-vadc-common.ko
 cpu_voltage_cooling.ko
-cpu_hotplug.ko
 msm_lmh_dcvs.ko
-thermal_pause.ko
 ddr_cdev.ko
 qti_cpufreq_cdev.ko
 sec_ext_tm.ko
