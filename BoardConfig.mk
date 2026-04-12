@@ -24,7 +24,7 @@ TARGET_USES_UEFI := true
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv9-a
+TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
@@ -65,7 +65,7 @@ TARGET_KERNEL_ARCH := arm64
 # Boot
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image console=null bootconfig androidboot.hardware=qcom hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 androidboot.init_fatal_panic=true androidboot.selinux=permissive loop.max_part=7
+BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image console=null bootconfig androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 loop.max_part=7
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_OFFSET := 0x00008000
@@ -82,6 +82,9 @@ BOARD_CUSTOM_BOOTIMG_MK := device/samsung/gts8pwifi/bootimg.mk
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
+
+# SELinux
+BOARD_SEPOLICY_DIRS += device/samsung/gts8pwifi/sepolicy
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
@@ -129,7 +132,6 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
 # TWRP specific build flags
-TW_DEVICE_VERSION := 1_sharpthenightmare
 TW_THEME := portrait_hdpi
 RECOVERY_TOUCHSCREEN_SWAP_XY := true
 RECOVERY_TOUCHSCREEN_FLIP_Y := true
