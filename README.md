@@ -21,14 +21,6 @@
 ## Supported models
 - SM-X800 (Galaxy Tab S8+ WiFi)
 
-## Encryption support
-This tree supports FBE (File-Based Encryption) decryption using the Qualcomm inline crypto stack (`aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0`).
-
-Required vendor binaries at runtime:
-- `/vendor/bin/qseecomd`
-- `/vendor/bin/hw/android.hardware.security.keymint-service`
-- `/vendor/bin/hw/android.hardware.gatekeeper@1.0-service`
-
 ## Flashing
 Flash via Odin using the `.tar` output, or via `adb sideload` / `fastboot flash recovery recovery.img`.
 
